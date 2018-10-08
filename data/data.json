@@ -1,0 +1,76 @@
+[
+    {
+        "author": {
+            "name": "NNT",
+            "social": {
+                "twitter": "#"
+            }
+        },
+        "wisdom": {
+            "title": "Antifragile - things that gain from disorder",
+            "metadata": {
+                "summary": "Just as human bones get stronger when subjected to stress and tension, many things in life benefit from stress, disorder, volatility, and turmoil. What Taleb has identified and calls antifragile are things that not only gain from chaos but need it in order to survive and flourish.",
+                "stores": {
+                    "amazon": "#",
+                    "goodreads": "#"
+                },
+                "wisdom": [
+                    {
+                        "author": {
+                            "name": "NNT",
+                            "social": {
+                                "twitter": "#"
+                            }
+                        },
+                        "link": "#",
+                        "summary": "Antifragility is beyond resilience or robustness Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, a nd stressors and love adventure, risk, and uncertainty.",
+                        "dimensions": [
+                            {
+                                "key": "time_to_read",
+                                "value": 10,
+                                "display": "Time to Read",
+                                "primary": true,
+                                "internal": true
+                            },
+                            {
+                                "key": "likes",
+                                "value": 100,
+                                "display": "Likes",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "total_rt",
+                                "value": 1000,
+                                "display": "Retweets",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "flag",
+                                "value": 0,
+                                "display": "Flag as spam",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "dislike",
+                                "value": 0,
+                                "display": "Dislike",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "heart",
+                                "value": 0,
+                                "display": "Love It",
+                                "primary": false,
+                                "internal": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]
