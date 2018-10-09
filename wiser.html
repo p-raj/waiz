@@ -4,7 +4,7 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-            <title>WAIZ - Become wiser about: Antifragile</title>
+            <title>WAIZ</title>
 
             <!-- CSS -->
             <link rel="stylesheet" href="./css/mini.css">
@@ -13,17 +13,21 @@
             
             <!-- JS -->
             <script type="text/javascript" src="./node_modules/pouchdb/dist/pouchdb.js"></script>
+            <script type="text/javascript" src="./node_modules/pouchdb/dist/pouchdb.find.js"></script>
+            <script type="text/javascript" src="./node_modules/handlebars/dist/handlebars.js"></script>
             <script type="text/javascript" src="./js/main.js"></script>
             <!-- JS -->
     </head>
     <body>
 
         <!--BEGIN: Title Section-->
-        <div id='title' class='row'>
+        <div class='row'>
             <!--BEGIN: Project Name-->
             <div class="col-lg-2 col-md-2">
                 <h4 class="hidden-sm">
-                    WAIZ 
+                    <a href='index.html'>
+                        WAIZ
+                    </a>
                 <span class="hidden-md">
                     <small>(That's how wise is pronounced)</small>
                     <small>Project Status: MVP</small>
@@ -46,28 +50,9 @@
             </div>
             <!--END: Project Name-->
             <!--BEGIN: Query Results-->
-            <div class="col-lg-10 col-md-10 col-sm-12">
-                <div class="row">
-                    <!--BEGIN: Query Topic-->
-                    <div class="col-sm-6">
-                        <h2>
-                            Antifragile - things that gain from disorder 
-                        </h2>
-                    </div>
-                    <!--END: Query Topic-->
-
-                    <!--BEGIN: Topic Author-->
-                    <div>
-                        <h2><a href="#">@NNT</a></h2>
-                    </div>
-                    <!--END: Topic Author-->
-
-                    <!--BEGIN: Main Idea-->
-                    <p>
-                        Just as human bones get stronger when subjected to stress and tension, many things in life benefit from stress, disorder, volatility, and turmoil. What Taleb has identified and calls antifragile are things that not only gain from chaos but need it in order to survive and flourish.
-                    </p>
-                    <!--END: Main Idea-->
-                </div>
+            <div id='title' class="col-lg-10 col-md-10 col-sm-12">
+                <!-- HANDLEBARS -->
+                <!-- title-template -->
             </div>
             <!--END: Query Results-->
     
@@ -75,127 +60,12 @@
         <!--END: Title Section-->
 
         <div id='content'>
-                <!--BEGIN: RESULT: Would be in for loop-->
-                
-                <!--BEGIN: SAMPLE RESULT 1-->
-                <div class='result row'>
-                    <!--BEGIN: Content-->
+            <!--BEGIN: RESULT: Would be in for loop-->
+            
+            <!--HANDLEBARS-->
+            <!-- result-template -->
 
-                        <!--BEGIN: Author & source: Always a priority -->
-
-                            <!--BEGIN: AUTHOR-->
-                            <div class="col-lg-2 col-md-2 col-sm-12">
-                                <h5>
-                                    <a href="#">@NNT</a>
-                                    <small>Real Name</small>
-                                </h5>
-                                    
-                                </span>
-                            </div>
-                            <!--END: AUTHOR-->
-
-                            <!--BEGIN: Main Highlight for the content-->
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <p>
-                                    Antifragility is beyond resilience or robustness
-                                    Some things benefit from shocks; they thrive and 
-                                    grow when exposed to volatility, randomness, disorder, a
-                                    nd stressors and love adventure, risk, and uncertainty. 
-                                </p>
-                            </div>
-                            <!--END: Main Highlight for the content-->
-
-                            <!-- BEGIN: Reader's Reaction-->
-                            <div class='col-lg-1 col-md-1 col-sm-12'>
-                                <p>
-                                    <span class="icon-heart"></span>
-                                    <span class="icon-unlike"></span>
-                                    <span class="icon-flag"></span>
-                                    <span class="icon-share"></span>
-                                </p>
-                            </div>
-                        <!-- END: Reader's Reaction-->
-
-                        <!--END: Author & source: Always a priority -->
-                        <!--BEGIN: Content Metadata -->
-                        <div class="row">
-                            <span class='dimension shaded'>Time to read: 12 min</span>
-                            <span class='dimension shaded'>Total Like: 100 min</span>
-                            <span class='dimension shaded'>Total Retweets: 100 min</span>
-                            <a href="#" class="dimension shaded">
-                                <span class="icon-link"></span>
-                                Source
-                            </a>
-                        </div>
-                        <!--END: Content Metadata -->
-
-                    <!--END: Content-->
-                    
-                    
-                </div>
-                <!--END: SAMPLE RESULT 1-->
-
-                <!--BEGIN: SAMPLE RESULT 1-->
-                <div class='result row'>
-                    <!--BEGIN: Content-->
-
-                        <!--BEGIN: Author & source: Always a priority -->
-
-                            <!--BEGIN: AUTHOR-->
-                            <div class="col-lg-2 col-md-2 col-sm-12">
-                                <h5>
-                                    <a href="#">@NNT</a>
-                                    <small>Real Name</small>
-                                </h5>
-                                    
-                                </span>
-                            </div>
-                            <!--END: AUTHOR-->
-
-                            <!--BEGIN: Main Highlight for the content-->
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <p>
-                                    Antifragility is beyond resilience or robustness
-                                    Some things benefit from shocks; they thrive and 
-                                    grow when exposed to volatility, randomness, disorder, a
-                                    nd stressors and love adventure, risk, and uncertainty. 
-                                </p>
-                            </div>
-                            <!--END: Main Highlight for the content-->
-
-                            <!-- BEGIN: Reader's Reaction-->
-                            <div class='col-lg-1 col-md-1 col-sm-12'>
-                                <p>
-                                    <span class="icon-heart"></span>
-                                    <span class="icon-unlike"></span>
-                                    <span class="icon-flag"></span>
-                                    <span class="icon-share"></span>
-                                </p>
-                            </div>
-                        <!-- END: Reader's Reaction-->
-
-                        <!--END: Author & source: Always a priority -->
-                        <!--BEGIN: Content Metadata -->
-                        <div class="row">
-                            <span class='dimension shaded'>Time to read: 12 min</span>
-                            <span class='dimension shaded'>Total Like: 100 min</span>
-                            <span class='dimension shaded'>Total Retweets: 100 min</span>
-                            <a href="#" class="dimension shaded">
-                                <span class="icon-link"></span>
-                                Source
-                            </a>
-                        </div>
-                        <!--END: Content Metadata -->
-
-                    <!--END: Content-->
-                    
-                    
-                </div>
-                <!--END: SAMPLE RESULT 1-->
-
-
-                <!--END: RESULT: end loop-->
-
+            <!--END: RESULT: end loop-->
         </div>
     </body>
     <footer>
@@ -214,4 +84,131 @@
             </form>
         </p>   
     </footer>
+    
+    <script id="title-template" type="text/x-handlebars-template">
+        <div class="row">
+                <!--BEGIN: Query Topic-->
+                <div class="col-sm-6">
+                    <h2>
+                        <a href='{{data.wisdom.wisdom.metadata.stores.goodreads}}'>
+                            {{data.wisdom.wisdom.title}}
+                        </a>
+                        <small>{{data.wisdom.wisdom.sub-title}}</small>
+                    </h2>
+                </div>
+                <!--END: Query Topic-->
+
+                <!--BEGIN: Topic Author-->
+                <div class="col-sm-6">
+                    <h2>
+                        <a href='{{data.wisdom.author.social.twitter.link}}'>@{{data.wisdom.author.social.twitter.username}}</a>
+                        <small>{{data.wisdom.author.name}}</small>
+                    </h2>
+                </div>
+                <!--END: Topic Author-->
+
+                <!--BEGIN: Main Idea-->
+                <p>
+                    {{data.wisdom.wisdom.metadata.summary}}
+                </p>
+                <!--END: Main Idea-->
+            </div>
+    </script>
+
+    <script id="result-template" type="text/x-handlebars-template">
+        <!--BEGIN: SAMPLE RESULT 1-->
+        {{#each data.wisdom.wisdom.metadata.wisdom}}
+            <div class='result row'>
+            <!--BEGIN: Content-->
+
+                <!--BEGIN: Author & source: Always a priority -->
+
+                    <!--BEGIN: AUTHOR-->
+                    <div class="col-lg-2 col-md-2 col-sm-12">
+                        <h5>
+                            <a href='{{author.social.twitter.link}}'>@{{author.social.twitter.username}}</a>
+                            <small>{{author.name}}</small>
+                        </h5>
+                            
+                        </span>
+                    </div>
+                    <!--END: AUTHOR-->
+
+                    <!--BEGIN: Main Highlight for the content-->
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <p>
+                            {{summary}}
+                        </p>
+                    </div>
+                    <!--END: Main Highlight for the content-->
+
+                    <!-- BEGIN: Reader's Reaction-->
+                    <div class='col-lg-1 col-md-1 col-sm-12'>
+                        <p>
+                            <a href='{{link}}'>
+                                <span class="icon-link"></span>
+                            </a>
+                            <span class="icon-heart"></span>
+                            <span class="icon-unlike"></span>
+                            <span class="icon-flag"></span>
+                        </p>
+                    </div>
+                <!-- END: Reader's Reaction-->
+
+                <!--END: Author & source: Always a priority -->
+                <!--BEGIN: Content Metadata -->
+                
+                <div class="row">
+                    {{#each dimensions}}
+                        <span class='dimension shaded'>{{display}}: {{value}} {{unit}}</span>
+                    {{/each}}
+                </div>
+
+                <!--END: Content Metadata -->
+            <!--END: Content-->
+        </div>
+        {{/each}}
+        <!--END: SAMPLE RESULT 1-->
+    </script>
+    
+    
+    <script type="text/javascript">
+        function set_title(context) {
+            var source   = document.getElementById("title-template").innerHTML;
+            var template = Handlebars.compile(source);
+            var html    = template(context);
+            // TITLE
+            document.getElementById('title').insertAdjacentHTML('beforeend', html);
+        }
+
+        function set_results(context) {
+            var source   = document.getElementById("result-template").innerHTML;
+            var template = Handlebars.compile(source);
+            var html    = template(context);
+            // RESULTS
+            document.getElementById('content').insertAdjacentHTML('beforeend', html);
+        }
+        // print_template 
+        function set_templates(results) {
+            var context = results[0]; // get only the first result
+            set_title(context);
+            set_results(context);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var db = new PouchDB('wise');
+        var remoteCouch = false;
+
+        filterWisdomByTitle(
+            db, 
+            {
+                query: {
+                    title: "Antifragile"
+                }
+            },
+            set_templates
+        );
+    </script>
+
 </html>
