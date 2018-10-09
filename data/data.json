@@ -3,11 +3,15 @@
         "author": {
             "name": "NNT",
             "social": {
-                "twitter": "#"
+                "twitter": {
+                    "username": "NNT",
+                    "link": "#"
+                }
             }
         },
         "wisdom": {
-            "title": "Antifragile - things that gain from disorder",
+            "title": "Antifragile",
+            "sub-title": "things that gain from disorder",
             "metadata": {
                 "summary": "Just as human bones get stronger when subjected to stress and tension, many things in life benefit from stress, disorder, volatility, and turmoil. What Taleb has identified and calls antifragile are things that not only gain from chaos but need it in order to survive and flourish.",
                 "stores": {
@@ -17,9 +21,12 @@
                 "wisdom": [
                     {
                         "author": {
-                            "name": "NNT",
+                            "name": "WISE NNT",
                             "social": {
-                                "twitter": "#"
+                                "twitter": {
+                                    "username": "WISE NNT",
+                                    "link": "#"
+                                }
                             }
                         },
                         "link": "#",
@@ -29,6 +36,125 @@
                                 "key": "time_to_read",
                                 "value": 10,
                                 "display": "Time to Read",
+                                "unit": "min",
+                                "primary": true,
+                                "internal": true
+                            },
+                            {
+                                "key": "likes",
+                                "value": 100,
+                                "display": "Likes",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "total_rt",
+                                "value": 1000,
+                                "display": "Retweets",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "flag",
+                                "value": 0,
+                                "display": "Flag as spam",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "dislike",
+                                "value": 0,
+                                "display": "Dislike",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "heart",
+                                "value": 0,
+                                "display": "Love It",
+                                "primary": false,
+                                "internal": true
+                            }
+                        ]
+                    },
+
+                    {
+                        "author": {
+                            "name": "WISER NNT",
+                            "social": {
+                                "twitter": {
+                                    "username": "WISER NNT",
+                                    "link": "#"
+                                }
+                            }
+                        },
+                        "link": "#",
+                        "summary": "The three most harmful addictions are heroin, carbohydrates, and a monthly salary.",
+                        "dimensions": [
+                            {
+                                "key": "time_to_read",
+                                "value": 10,
+                                "display": "Time to Read",
+                                "unit": "min",
+                                "primary": true,
+                                "internal": true
+                            },
+                            {
+                                "key": "likes",
+                                "value": 100,
+                                "display": "Likes",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "total_rt",
+                                "value": 1000,
+                                "display": "Retweets",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "flag",
+                                "value": 0,
+                                "display": "Flag as spam",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "dislike",
+                                "value": 0,
+                                "display": "Dislike",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "heart",
+                                "value": 0,
+                                "display": "Love It",
+                                "primary": false,
+                                "internal": true
+                            }
+                        ]
+                    },
+
+                    {
+                        "author": {
+                            "name": "WISEST NNT",
+                            "social": {
+                                "twitter": {
+                                    "username": "WISEST NNT",
+                                    "link": "#"
+                                }
+                            }
+                        },
+                        "link": "#",
+                        "summary": "Some can be more intelligent than others in a structured environment—in fact school has a selection bias as it favors those quicker in such an environment, and like anything competitive, at the expense of performance outside it. Although I was not yet familiar with gyms, my idea of knowledge was as follows. People who build their strength using these modern expensive gym machines can lift extremely large weights, show great numbers and develop impressive-looking muscles, but fail to lift a stone; they get completely hammered in a street fight by someone trained in more disorderly settings. Their strength is extremely domain-specific and their domain doesn't exist outside of ludic—extremely organized—constructs. In fact their strength, as with over-specialized athletes, is the result of a deformity. I thought it was the same with people who were selected for trying to get high grades in a small number of subjects rather than follow their curiosity: try taking them slightly away from what they studied and watch their decomposition, loss of confidence, and denial. (Just like corporate executives are selected for their ability to put up with the boredom of meetings, many of these people were selected for their ability to concentrate on boring material.) I've debated many economists who claim to specialize in risk and probability: when one takes them slightly outside their narrow focus, but within the discipline of probability, they fall apart, with the disconsolate face of a gym rat in front of a gangster hit man.",
+                        "dimensions": [
+                            {
+                                "key": "time_to_read",
+                                "value": 10,
+                                "display": "Time to Read",
+                                "unit": "min",
                                 "primary": true,
                                 "internal": true
                             },
