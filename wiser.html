@@ -30,7 +30,7 @@
             <div class="col-lg-2 col-md-2">
                 <h4 class="hidden-sm">
                     <a href='index.html'>
-                        WAIZ
+                        << WAIZ
                     </a>
                 <span class="hidden-md">
                     <small>(That's how wise is pronounced)</small>
@@ -40,6 +40,9 @@
                 </h4>
                 <!--BEGIN: REAL DEAL - the dimension important for the user-->
             <div>
+                <h4 class="hidden-md hidden-lg">
+                    <a href='index.html'><<</a>
+                </h4>
                 <p>
                     Filter:
                     <select>
@@ -193,6 +196,7 @@
         // print_template 
         function set_templates(results) {
             var context = results[0]; // get only the first result
+            console.log(results);
             set_title(context);
             set_results(context);
         }
@@ -201,13 +205,13 @@
     <script type="text/javascript">
         var db = new PouchDB('wise');
         var remoteCouch = false;
-
-        filterWisdomByTitle(
+        id = getParameterByName('id');
+        rev = getParameterByName('rev');
+        filterWisdomById(
             db, 
-            {
-                query: {
-                    title: "Antifragile"
-                }
+            {    
+                id: id,
+                rev: rev
             },
             set_templates
         );

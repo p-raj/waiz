@@ -86,14 +86,45 @@ function filterWisdomByTitle(db, query, callback) {
   )
 }
 
-// 
+// Fetch all the by ID
+function filterWisdomById(db, query, callback) {
+  filterWisdom(
+    db, 
+    {
+      '_id': query.id,
+      '_rev': query.rev
+    }, 
+    function (response) {
+      if ((callback == 'undefined') || (callback == null)) {
+        return console.log(response);
+      } else {
+        callback(response.docs);
+      }
+    }
+  )
+}
+
+// standard query executor
 function filterWisdom(db, selector, callback) {
+  console.log(selector);
   db.find({
     selector: selector
   }, function (err, response) {
     if (err) { return console.log(err); }
     callback(response);
   });
+}
+
+// https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
+
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, '\\$&');
+  var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
 // on page load init function
