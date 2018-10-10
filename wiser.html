@@ -7,6 +7,10 @@
             <title>WAIZ</title>
 
             <!-- CSS -->
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Roboto+Slab:400,700|Roboto:400,500" rel="stylesheet"> 
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <!--fonts-->
             <link rel="stylesheet" href="./css/mini.css">
             <link rel="stylesheet" href="./css/main.css">
             <!-- CSS -->
@@ -135,7 +139,7 @@
                     <!--END: AUTHOR-->
 
                     <!--BEGIN: Main Highlight for the content-->
-                    <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="col-lg-10 col-md-10 col-sm-12">
                         <p>
                             {{summary}}
                         </p>
@@ -143,24 +147,22 @@
                     <!--END: Main Highlight for the content-->
 
                     <!-- BEGIN: Reader's Reaction-->
-                    <div class='col-lg-1 col-md-1 col-sm-12'>
-                        <p>
-                            <a href='{{link}}'>
-                                <span class="icon-link"></span>
-                            </a>
-                            <span class="icon-heart"></span>
-                            <span class="icon-unlike"></span>
-                            <span class="icon-flag"></span>
-                        </p>
+                    <div class='col-lg-12 col-md-12 col-sm-12 reaction'>
+                        <span>
+                            <a href='{{link}}'><i class="fas fa-link"></i></a>
+                        </span>
+                        <span><i class="far fa-heart featureunavailable text-red"></i></span>
+                        <span><i class="far fa-thumbs-down featureunavailable text-orange"></i></span>
                     </div>
                 <!-- END: Reader's Reaction-->
 
                 <!--END: Author & source: Always a priority -->
                 <!--BEGIN: Content Metadata -->
                 
-                <div class="row">
+                <div class="row dimension">
+                    <span><b>Dimensions:</b></span>
                     {{#each dimensions}}
-                        <span class='dimension shaded'>{{display}}: {{value}} {{unit}}</span>
+                        <span class='shaded {{#if primary}}primary{{/if}}'>{{display}}: {{value}} {{unit}}</span>
                     {{/each}}
                 </div>
 
