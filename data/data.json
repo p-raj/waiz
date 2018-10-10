@@ -16,7 +16,7 @@
                 "summary": "Just as human bones get stronger when subjected to stress and tension, many things in life benefit from stress, disorder, volatility, and turmoil. What Taleb has identified and calls antifragile are things that not only gain from chaos but need it in order to survive and flourish.",
                 "stores": {
                     "amazon": "#",
-                    "goodreads": "#"
+                    "goodreads": "https://www.goodreads.com/book/show/13530973-antifragile"
                 },
                 "wisdom": [
                     {
@@ -153,6 +153,88 @@
                             {
                                 "key": "time_to_read",
                                 "value": 10,
+                                "display": "Time to Read",
+                                "unit": "min",
+                                "primary": true,
+                                "internal": true
+                            },
+                            {
+                                "key": "likes",
+                                "value": 100,
+                                "display": "Likes",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "total_rt",
+                                "value": 1000,
+                                "display": "Retweets",
+                                "primary": false,
+                                "internal": false
+                            },
+                            {
+                                "key": "flag",
+                                "value": 0,
+                                "display": "Flag as spam",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "dislike",
+                                "value": 0,
+                                "display": "Dislike",
+                                "primary": false,
+                                "internal": true
+                            },
+                            {
+                                "key": "heart",
+                                "value": 0,
+                                "display": "Love It",
+                                "primary": false,
+                                "internal": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "author": {
+            "name": "Nassim Nicholas Taleb ",
+            "social": {
+                "twitter": {
+                    "username": "nntaleb",
+                    "link": "https://twitter.com/nntaleb"
+                }
+            }
+        },
+        "wisdom": {
+            "title": "The Black Swan",
+            "sub-title": "The Impact of the Highly Improbable ",
+            "metadata": {
+                "summary": "The Impact of the Highly Improbable is a 2007 book by author and former options trader Nassim Nicholas Taleb. The book focuses on the extreme impact of rare and unpredictable outlier events — and the human tendency to find simplistic explanations for these events, retrospectively.",
+                "stores": {
+                    "amazon": "https://www.amazon.in/gp/product/1400063515/",
+                    "goodreads": "https://www.goodreads.com/book/show/242472.The_Black_Swan"
+                },
+                "wisdom": [
+                    {
+                        "author": {
+                            "name": "Niklas Goeke",
+                            "social": {
+                                "twitter": {
+                                    "username": "NiklasGoeke",
+                                    "link": "https://twitter.com/NiklasGoeke"
+                                }
+                            }
+                        },
+                        "link": "https://fourminutebooks.com/the-black-swan-summary/",
+                        "summary": "The Black Swan explains why we are so bad at predicting the future, and how unlikely events dramatically change our lives if they do happen, as well as what you can do to become better at expecting the unexpected.",
+                        "dimensions": [
+                            {
+                                "key": "time_to_read",
+                                "value": 1,
                                 "display": "Time to Read",
                                 "unit": "min",
                                 "primary": true,
