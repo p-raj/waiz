@@ -55,20 +55,6 @@
         
         <div id='content'>
             <table>
-                <thead>
-                    <th>
-                        Author
-                    </th>
-                    <th>
-                        Title
-                    </th>
-                    <th>
-                        Metadata
-                    </th>
-                    <th>
-                        Link
-                    </th>
-                </thead>
                 <tbody id='datalist'>
                     <!--HANDLEBARS-->
 
@@ -122,18 +108,28 @@
     <script id="result-template" type="text/x-handlebars-template">
         {{#each this}}
             <tr>
-                <td>
-                    {{doc.data.wisdom.author.name}}
+                <td class="col-md-2 col-sm-12">
+                    <h5>
+                        <!-- <a href='{{doc.data.wisdom.author.social.twitter.link}}' target="_blank"> -->
+                        <!--TODO: enable searching with authors name-->
+                        <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">
+                            @{{doc.data.wisdom.author.social.twitter.username}}
+                        </a>
+                        <small>{{doc.data.wisdom.author.name}}</small>
+                    </h5>
                 </td>
-                <td>
-                    {{doc.data.wisdom.wisdom.title}}
-                    <small>{{doc.data.wisdom.wisdom.sub-title}}</small>
+                <td class="col-md-2 col-sm-12">
+                    <h5>
+                        <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">
+                            {{doc.data.wisdom.wisdom.title}}
+                        </a>
+                        <small>{{doc.data.wisdom.wisdom.sub-title}}</small>
+                    </h5>
                 </td>
-                <td>
-                    {{doc.data.wisdom.wisdom.metadata.summary}}
-                </td>
-                <td>
-                    <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">>></a>
+                <td class="col-sm-12">
+                    <p>
+                        {{doc.data.wisdom.wisdom.metadata.summary}}
+                    </p>
                 </td>
             </tr>
         {{/each}}

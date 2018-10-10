@@ -1325,8 +1325,8 @@ footer.sticky {
 */
 /* Table module CSS variable definitions. */
 :root {
-  --table-border-color: #aaa;
-  --table-border-separator-color: #666;
+  --table-border-color: #DAE1E7;
+  --table-border-separator-color: #F1F5F8;
   --table-head-back-color: #F1F5F8;
   --table-head-fore-color: #22292F;
   --table-body-back-color: #FFFFFF;
@@ -1338,12 +1338,12 @@ footer.sticky {
 table {
   border-collapse: separate;
   border-spacing: 0;
-  margin: 0;
+  margin: var(--universal-margin) 0;
   display: flex;
   flex: 0 1 auto;
   flex-flow: row wrap;
-  padding: var(--universal-padding);
-  padding-top: 0;
+  /* padding: var(--universal-padding); */
+  /* padding-top: 0; */
 }
 
 table caption {
@@ -1354,21 +1354,11 @@ table caption {
 }
 
 table thead, table tbody {
+  z-index: 999;
+  border-radius: 0;
   display: flex;
   flex-flow: row wrap;
-  border: 0.0625rem solid var(--table-border-color);
-}
-
-table thead {
-  z-index: 999;
-  border-radius: var(--universal-border-radius) var(--universal-border-radius) 0 0;
-  border-bottom: 0.0625rem solid var(--table-border-separator-color);
-}
-
-table tbody {
-  border-top: 0;
-  margin-top: calc(0 - var(--universal-margin));
-  border-radius: 0 0 var(--universal-border-radius) var(--universal-border-radius);
+  border: none;
 }
 
 table tr {
@@ -1418,9 +1408,9 @@ table:not(.horizontal) thead {
   top: 0;
 }
 
-table:not(.horizontal) tbody tr:first-child td {
+/* table:not(.horizontal) tbody tr:first-child td {
   border-top: 0;
-}
+} */
 
 table.horizontal {
   border: 0;
@@ -1450,9 +1440,9 @@ table.horizontal th, table.horizontal td {
   border-bottom: 0.0625rem solid var(--table-border-color);
 }
 
-table.horizontal th:not(:first-child), table.horizontal td:not(:first-child) {
+/* table.horizontal th:not(:first-child), table.horizontal td:not(:first-child) {
   border-top: 0;
-}
+} */
 
 table.horizontal th {
   text-align: right;
@@ -1460,15 +1450,15 @@ table.horizontal th {
   border-right: 0.0625rem solid var(--table-border-separator-color);
 }
 
-table.horizontal thead tr:first-child {
+/* table.horizontal thead tr:first-child {
   padding-left: 0;
 }
 
 table.horizontal th:first-child, table.horizontal td:first-child {
   border-top: 0.0625rem solid var(--table-border-color);
-}
+} */
 
-table.horizontal tbody tr:last-child td {
+/* table.horizontal tbody tr:last-child td {
   border-right: 0.0625rem solid var(--table-border-color);
 }
 
@@ -1486,7 +1476,7 @@ table.horizontal thead tr:first-child th:first-child {
 
 table.horizontal thead tr:first-child th:last-child {
   border-bottom-left-radius: 0.25rem;
-}
+} */
 
 @media screen and (max-width: 767px) {
   table, table.horizontal {
