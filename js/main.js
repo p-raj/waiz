@@ -26,7 +26,7 @@ function resetDatabase(db) {
 // initiate the database
 function initWisdom(db) {
   db.info(function(err, res) {
-    if (err) { 
+    if (err) {
       isDataLoaded = false;
       return console.log(err); 
     }
@@ -36,8 +36,8 @@ function initWisdom(db) {
         var data = JSON.parse(response);
         for (var i=0; i<data.length; i++) {
           addWisdom(db, data[i], i);
-        }    
-      })  
+        }
+      })
     }
     isDataLoaded = true;
   })
