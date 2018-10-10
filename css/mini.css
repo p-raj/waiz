@@ -9,11 +9,36 @@
   Browsers resets and base typography.
 */
 /* Core module CSS variable definitions */
+
+@font-face {
+  font-family: "Bookerly";
+  src: url("../fonts/Bookerly/Bookerly-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bookerly";
+  src: url("../fonts/Bookerly/Bookerly-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("../fonts/Literata/literata-regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Literata";
+  src: url("../fonts/Literata/literata-bold.otf");
+  font-weight: 700;
+}
+
 :root {
   --fore-color: #3D4852;
   --secondary-fore-color: #8795A1;
   --back-color: #FFF;
-  --secondary-back-color: #DAE1E7;
+  --secondary-back-color: #F8FAFC;
   --blockquote-color: #F6993F;
   --pre-color: #EFF8FF;
   --border-color: #DAE1E7;
@@ -27,22 +52,15 @@
 
 }
 
-html {
-  font-size: 16px;
+html, * {
+  font-family: 'Bookerly', 'Literata', 'Roboto Slab', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
 }
 
 a, b, del, em, i, ins, q, span, strong, u {
   font-size: 1em;
-}
-
-html, * {
-  font-family: Source Sans Pro,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue;
-  line-height: 1.5;
-  -webkit-text-size-adjust: 100%;
-}
-
-* {
-  font-size: 1rem;
 }
 
 body {
@@ -74,9 +92,9 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25;
+  line-height: 1.5;
   margin: calc(1.5 * var(--universal-margin)) var(--universal-margin);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -84,6 +102,11 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   display: block;
   margin-top: -0.25rem;
   font-size: calc(2.5rem * var(--heading-ratio)) !important;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 0.02rem;
+  word-spacing: 0.04rem;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -138,6 +161,11 @@ ol, ul {
   padding-left: calc(2 * var(--universal-margin));
 }
 
+ul {
+  list-style: none inside url("sqpurple.gif");
+}
+
+
 b, strong {
   font-weight: 700;
 }
@@ -167,7 +195,7 @@ blockquote:before {
   position: absolute;
   top: calc(0rem - var(--universal-padding));
   left: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   content: "\201c";
@@ -901,7 +929,7 @@ option {
 
 [type="checkbox"]:checked:before {
   content: '\2713';
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: calc(1rem + var(--universal-padding) / 2);
   top: calc(0rem - var(--universal-padding));
   left: calc(var(--universal-padding) / 4);
@@ -1204,7 +1232,7 @@ footer.sticky {
   position: relative;
   vertical-align: bottom;
   content: '\00a0\2261\00a0';
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
 }
 
@@ -1261,7 +1289,7 @@ footer.sticky {
   content: '\00D7';
   color: var(--drawer-close-color);
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   line-height: 1;
   text-align: center;
@@ -1502,7 +1530,7 @@ table.horizontal thead tr:first-child th:last-child {
   table td:before, table.horizontal td:before {
     content: attr(data-label);
     float: left;
-    font-weight: 600;
+    font-weight: 700;
   }
   table th:first-child, table td:first-child, table.horizontal th:first-child, table.horizontal td:first-child {
     border-top: 0;
@@ -1702,7 +1730,7 @@ mark.inline-block {
   content: '\00D7';
   color: var(--modal-close-color);
   position: relative;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.75rem;
   line-height: 1;
   text-align: center;

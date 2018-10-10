@@ -1,3 +1,10 @@
+/* INDEX PAGE */
+#search input:not([type]), [type="text"] {
+  width: 100%;
+  background-color: var(--back-color);
+}
+
+/* RESULTS PAGE */
 .result {
     border: 0;
 
@@ -8,16 +15,37 @@
     border-bottom: 0.06rem solid var(--border-color) !important;
 }
 
-.dimension {
-    margin: calc(0.8*var(--universal-margin)) calc(0.8*var(--universal-margin)) 0 calc(0.8*var(--universal-margin)) !important;
+.dimension, .shaded, .primary, .dimension>span, .dimension b {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
+.dimension span, .reaction span {
+  margin: calc(1*var(--universal-margin)) calc(0.8*var(--universal-margin)) 0 calc(1*var(--universal-margin)) !important;
+}
+
+.dimension b {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.dimension span {
     padding: calc(0.5*var(--universal-margin)) !important;
     font-size: calc(2.5rem * var(--heading-ratio)) !important;
 }
 
-.shaded {
-    background-color: #f8fafc;
-    font-size: .75rem;
-    line-height: 1.5;
+.shaded, .primary {
+  background-color: var(--secondary-back-color);
+  font-size: .75rem;
+  line-height: 1.5;
+}
+
+.primary {
+  background-color: #EFF8FF !important;
+}
+
+.featureunavailable {
+  opacity: 0.25;
 }
 
 span.icon-heart {
@@ -35,3 +63,249 @@ span.icon-heart {
   span.icon-flag {
     background-image: url("data:image/svg+xml,%3Csvg%20class%3D%22feather%20feather-flag%20sc-dnqmqq%20jxshSx%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20aria-hidden%3D%22true%22%20data-reactid%3D%22551%22%3E%3Cpath%20d%3D%22M4%2015s1-1%204-1%205%202%208%202%204-1%204-1V3s-1%201-4%201-5-2-8-2-4%201-4%201z%22%3E%3C%2Fpath%3E%3Cline%20x1%3D%224%22%20y1%3D%2222%22%20x2%3D%224%22%20y2%3D%2215%22%3E%3C%2Fline%3E%3C%2Fsvg%3E");
   }
+
+/* COLORS */
+
+.text-left {
+  text-align:left
+ }
+ .text-center {
+  text-align:center
+ }
+ .text-right {
+  text-align:right
+ }
+ .text-justify {
+  text-align:justify
+ }
+ .text-transparent {
+  color:transparent
+ }
+ .text-black {
+  color:#22292f
+ }
+ .text-grey-darkest {
+  color:#3d4852
+ }
+ .text-grey-darker {
+  color:#606f7b
+ }
+ .text-grey-dark {
+  color:#8795a1
+ }
+ .text-grey {
+  color:#b8c2cc
+ }
+ .text-grey-light {
+  color:#dae1e7
+ }
+ .text-grey-lighter {
+  color:#f1f5f8
+ }
+ .text-grey-lightest {
+  color:#f8fafc
+ }
+ .text-white {
+  color:#fff
+ }
+ .text-red-darkest {
+  color:#3b0d0c
+ }
+ .text-red-darker {
+  color:#621b18
+ }
+ .text-red-dark {
+  color:#cc1f1a
+ }
+ .text-red {
+  color:#e3342f
+ }
+ .text-red-light {
+  color:#ef5753
+ }
+ .text-red-lighter {
+  color:#f9acaa
+ }
+ .text-red-lightest {
+  color:#fcebea
+ }
+ .text-orange-darkest {
+  color:#462a16
+ }
+ .text-orange-darker {
+  color:#613b1f
+ }
+ .text-orange-dark {
+  color:#de751f
+ }
+ .text-orange {
+  color:#f6993f
+ }
+ .text-orange-light {
+  color:#faad63
+ }
+ .text-orange-lighter {
+  color:#fcd9b6
+ }
+ .text-orange-lightest {
+  color:#fff5eb
+ }
+ .text-yellow-darkest {
+  color:#453411
+ }
+ .text-yellow-darker {
+  color:#684f1d
+ }
+ .text-yellow-dark {
+  color:#f2d024
+ }
+ .text-yellow {
+  color:#ffed4a
+ }
+ .text-yellow-light {
+  color:#fff382
+ }
+ .text-yellow-lighter {
+  color:#fff9c2
+ }
+ .text-yellow-lightest {
+  color:#fcfbeb
+ }
+ .text-green-darkest {
+  color:#0f2f21
+ }
+ .text-green-darker {
+  color:#1a4731
+ }
+ .text-green-dark {
+  color:#1f9d55
+ }
+ .text-green {
+  color:#38c172
+ }
+ .text-green-light {
+  color:#51d88a
+ }
+ .text-green-lighter {
+  color:#a2f5bf
+ }
+ .text-green-lightest {
+  color:#e3fcec
+ }
+ .text-teal-darkest {
+  color:#0d3331
+ }
+ .text-teal-darker {
+  color:#20504f
+ }
+ .text-teal-dark {
+  color:#38a89d
+ }
+ .text-teal {
+  color:#4dc0b5
+ }
+ .text-teal-light {
+  color:#64d5ca
+ }
+ .text-teal-lighter {
+  color:#a0f0ed
+ }
+ .text-teal-lightest {
+  color:#e8fffe
+ }
+ .text-blue-darkest {
+  color:#12283a
+ }
+ .text-blue-darker {
+  color:#1c3d5a
+ }
+ .text-blue-dark {
+  color:#2779bd
+ }
+ .text-blue {
+  color:#3490dc
+ }
+ .text-blue-light {
+  color:#6cb2eb
+ }
+ .text-blue-lighter {
+  color:#bcdefa
+ }
+ .text-blue-lightest {
+  color:#eff8ff
+ }
+ .text-indigo-darkest {
+  color:#191e38
+ }
+ .text-indigo-darker {
+  color:#2f365f
+ }
+ .text-indigo-dark {
+  color:#5661b3
+ }
+ .text-indigo {
+  color:#6574cd
+ }
+ .text-indigo-light {
+  color:#7886d7
+ }
+ .text-indigo-lighter {
+  color:#b2b7ff
+ }
+ .text-indigo-lightest {
+  color:#e6e8ff
+ }
+ .text-purple-darkest {
+  color:#21183c
+ }
+ .text-purple-darker {
+  color:#382b5f
+ }
+ .text-purple-dark {
+  color:#794acf
+ }
+ .text-purple {
+  color:#9561e2
+ }
+ .text-purple-light {
+  color:#a779e9
+ }
+ .text-purple-lighter {
+  color:#d6bbfc
+ }
+ .text-purple-lightest {
+  color:#f3ebff
+ }
+ .text-pink-darkest {
+  color:#451225
+ }
+ .text-pink-darker {
+  color:#6f213f
+ }
+ .text-pink-dark {
+  color:#eb5286
+ }
+ .text-pink {
+  color:#f66d9b
+ }
+ .text-pink-light {
+  color:#fa7ea8
+ }
+ .text-pink-lighter {
+  color:#ffbbca
+ }
+ .text-pink-lightest {
+  color:#ffebef
+ }
+ .text-tailwind-teal-light {
+  color:#5ebcca
+ }
+ .text-tailwind-teal {
+  color:#44a8b3
+ }
+ .text-tailwind-teal-dark {
+  color:#2f8696
+ }
+ .text-default {
+  color:#dae1e7
+ }
