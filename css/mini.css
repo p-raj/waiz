@@ -1327,11 +1327,12 @@ footer.sticky {
 :root {
   --table-border-color: #aaa;
   --table-border-separator-color: #666;
-  --table-head-back-color: #e6e6e6;
-  --table-head-fore-color: #111;
-  --table-body-back-color: #f8f8f8;
-  --table-body-fore-color: #111;
+  --table-head-back-color: #F1F5F8;
+  --table-head-fore-color: #22292F;
+  --table-body-back-color: #FFFFFF;
+  --table-body-fore-color: #3D4852;
   --table-body-alt-back-color: #eee;
+
 }
 
 table {
@@ -1393,7 +1394,7 @@ table td {
 
 table:not(.horizontal) {
   overflow: auto;
-  max-height: 400px;
+  max-height: 800px;
 }
 
 table:not(.horizontal) thead, table:not(.horizontal) tbody {

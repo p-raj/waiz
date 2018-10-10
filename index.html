@@ -7,101 +7,163 @@
             <title>WAIZ</title>
 
             <!-- CSS -->
+            <!--fonts-->
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500|Roboto+Slab:400,700|Roboto:400,500" rel="stylesheet"> 
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+            <!--fonts-->
             <link rel="stylesheet" href="./css/mini.css">
             <link rel="stylesheet" href="./css/main.css">
             <!-- CSS -->
             
             <!-- JS -->
+            <script type="text/javascript" src="./node_modules/pouchdb/dist/pouchdb.js"></script>
+            <script type="text/javascript" src="./node_modules/pouchdb/dist/pouchdb.find.js"></script>
+            <script type="text/javascript" src="./node_modules/handlebars/dist/handlebars.js"></script>
             <script type="text/javascript" src="./js/main.js"></script>
             <!-- JS -->
     </head>
     <body>
-        <div id='title' class='row'>
-            <p>
-                <span class='main'>WAIZ</span> 
-                <span class='smartass'>(That's how wise is pronounced)</span>
-            </p>
-            <p>
-                <span id='project_status'>Project Status: MVP</span>
-            </p>
-        </div>
 
-        <div id='search' class='row'>
-            <input type='text'/>
+        <!--BEGIN: Title Section-->
+        <div class='row'>
+            <!--BEGIN: Project Name-->
+            <div class="col-lg-12 col-md-12 text-center">
+                <h1 class="hidden-sm">
+                    <a href='index.html'>
+                        WAIZ
+                    </a>
+                <span class="hidden-md">
+                    <small>(That's how wise is pronounced)</small>
+                    <small>Project Status: MVP</small>
+                </span>
+                    
+                </h1>
+                <!--BEGIN: REAL DEAL - the dimension important for the user-->
+            <!--END: Data Dimensions or simply the filters-->
+            </div>
+            <!--END: Project Name-->
+    
         </div>
-
+        <!--END: Title Section-->
+        <!--BEGIN: Search Section-->
+        <div class='row' id='search'>
+            <div class="col-sm-8 col-sm-offset-2">
+                <input type="text" name='search'>
+            </div>
+        </div>
+        <!--END: Search Section-->
+        
         <div id='content'>
-
             <table>
                 <thead>
-                    <tr>
-                        <th>
-                            Topic
-                        </th>
-                        <th>
-                            Title
-                        </th>
-                        <th>
-                            Matadata
-                        </th>
-                        <th>
-                            Explore
-                        </th>
-                    </tr>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        Metadata
+                    </th>
+                    <th>
+                        Link
+                    </th>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            Book
-                        </td>
-                        <td>
-                            Antifragile - 
-                        </td>
-                        <td>
-                            <a href='https://www.google.com/search?safe=off&source=hp&ei=hmyjW-PDGYH1rQGDjbvgDg&q=antifragile+book&oq=antifragile+book&gs_l=psy-ab.3...1667.4915.0.5294.13.12.0.0.0.0.337.1210.2-4j1.5.0....0...1.1.64.psy-ab..8.5.1209.0..0j35i39k1j0i131k1j0i67k1.0.VuMwBOUJEy4'>Metadata</a>
-                        </td>
-                        <td>
-                            <a href='./wiser.html?topic=book&title=Antifragile'>&raquo;</a>
-                        </td>
-                    </tr>
+                <tbody id='datalist'>
+                    <!--HANDLEBARS-->
+
                 </tbody>
             </table>
         </div>
     </body>
+
     <footer>
-        <p>
-            <h4>
+        <div class="col-md-12">
+            <h3>
                 Why?
                 <small>Exploring the ideas mentioned here </small>
-            </h4>
+            </h3>
             <div>
                 <ul>
                     <li>
-                        <a href='https://twitter.com/david_perell/status/1039911656900448256'>David Perell</a>
+                        <a href='https://twitter.com/david_perell/status/1039911656900448256'>
+                            <i class="fas fa-at"></i>David Perell
+                        </a>
                     </li>
                     <li>
-                        <a href='https://twitter.com/samhinkie/status/1039907256068857856'>Sam Hinkie</a>
+                        <a href='https://twitter.com/samhinkie/status/1039907256068857856'>
+                            <i class="fas fa-at"></i>Sam Hinkie
+                        </a>
                     </li>
                 </ul>
             </div>
-        </p>
-        <p>
-            <h4>
-                What?
-            </h4>
-        </p>
-        <p>
-            <h4>
+        </div>
+        <div class="col-md-12">
+            <h3>
                 How?
-            </h4>
-        </p>
-        <p>
+                <small>Request > Google > Twitter</small>
+            </h3>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+        </div>
+        <div class="col-md-12">
             <h4>
-                Who?
-                <small>Doesn't Matter! Product > Idea > Person.</small>
+                Request for content
             </h4>
-            <a href='#'>Let's brainstorm!</a>
-        </p>
+            <form>
+                <label for='content_request'>Content Google Search Link</label>
+                <input type='text' name='content_request'>
+                <input type="submit" name="submit" title="submit">
+            </form>
+        </div>
     </footer>
+
+    <script id="result-template" type="text/x-handlebars-template">
+        {{#each this}}
+            <tr>
+                <td>
+                    {{doc.data.wisdom.author.name}}
+                </td>
+                <td>
+                    {{doc.data.wisdom.wisdom.title}}
+                    <small>{{doc.data.wisdom.wisdom.sub-title}}</small>
+                </td>
+                <td>
+                    {{doc.data.wisdom.wisdom.metadata.summary}}
+                </td>
+                <td>
+                    <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">>></a>
+                </td>
+            </tr>
+        {{/each}}
+    </script>
+
+    <script type="text/javascript">
+        function set_results(context) {
+            var source   = document.getElementById("result-template").innerHTML;
+            var template = Handlebars.compile(source);
+            var html    = template(context);
+            // RESULTS
+            document.getElementById('datalist').insertAdjacentHTML('beforeend', html);
+        }
+        // print_template 
+        function set_templates(results) {
+            var context = results;
+            console.log(context);
+            set_results(context);
+        }
+    </script>
+
+    <script type="text/javascript">
+        var db = new PouchDB('wise');
+        var remoteCouch = false;
+
+        getAllWisdom(
+            db, 
+            set_templates
+        );
+    </script>
+
 
 </html>
