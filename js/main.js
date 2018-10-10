@@ -12,19 +12,26 @@ function loadJSON(callback) {
   xobj.send(null);  
 }
 
-function init() {
+// Database methods to get and probably set the wise-list
+
+// reset the database
+function resetDatabase(db) {
+  db.destroy();
   var db = new PouchDB('wise');
   var remoteCouch = false;
+  var isDataLoaded=false;
   initWisdom(db);
 }
 
-// Database methods to get and probably set the wise-list
-
 // initiate the database
 function initWisdom(db) {
-  db.info(function(err, res) { 
-    if (err) { return console.log(err); }
+  db.info(function(err, res) {
+    if (err) { 
+      isDataLoaded = false;
+      return console.log(err); 
+    }
     if (res.doc_count == 0) {
+      isDataLoaded = false;
       loadJSON(function(response) {
         var data = JSON.parse(response);
         for (var i=0; i<data.length; i++) {
@@ -32,6 +39,7 @@ function initWisdom(db) {
         }    
       })  
     }
+    isDataLoaded = true;
   })
 }
 
@@ -44,7 +52,7 @@ function addWisdom(db, wisdom, index) {
   db.put({
     _id: wisdom._id,
     _rev: wisdom._rev,
-    data: wisdom
+    data: wisdom // TODO: refactor
   }, function(err, response) {
     if (err) { return console.log(err); }
     return console.log(response);
@@ -59,7 +67,7 @@ function getAllWisdom(db, callback) {
       return console.log(response);
     } else {
       callback(response.rows);
-    }     
+    }
   });
 }
 
@@ -88,4 +96,11 @@ function filterWisdom(db, selector, callback) {
   });
 }
 
+// on page load init function
+function init() {
+  var db = new PouchDB('wise');
+  var remoteCouch = false;
+  var isDataLoaded=false;
+  initWisdom(db);
+}
 init()
