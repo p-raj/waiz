@@ -1,5 +1,5 @@
 /* INDEX PAGE */
-#search input:not([type]), [type="text"] {
+#search {
   width: 100%;
   background-color: var(--back-color);
 }

@@ -15,11 +15,12 @@ function loadJSON(callback) {
 
 // reset the database
 function resetDatabase(db) {
-  db.destroy();
-  var db = new PouchDB('wise');
-  var remoteCouch = false;
   var isDataLoaded=false;
-  initWisdom(db);
+  db.destroy().then(() => {
+    var db = new PouchDB('wise');
+    var remoteCouch = false;
+    initWisdom(db);
+  });
 }
 
 // initiate the database
@@ -72,17 +73,29 @@ function getAllWisdom(db, callback) {
 
 // Fetch all the records that matches the condition
 function filterWisdomByTitle(db, query, callback) {
-  filterWisdom(
-    db, 
-    {'wisdom.title': query.title}, 
-    function (response) {
+  // db.createIndex(
+  //   {index: {fields: ['data.wisdom.wisdom.title', 'data.wisdom.author.name']}}, 
+  //   (e,r) => { 
+  //     if (e) {return console.log(e)} 
+  //     return console.log(r)
+  //   });
+  db.createIndex({
+    index: {
+      fields: ['data.wisdom.wisdom.title', 'data.wisdom.author.name']
+    }
+  }).then(filterWisdom( db, {
+    $or: [
+      {'data.wisdom.wisdom.title': query.title},
+      {'data.wisdom.author.name': query.title}
+    ]
+  }, function (response) {
       if ((callback == 'undefined') || (callback == null)) {
         return console.log(response);
       } else {
         callback(response.docs);
       }
-    }
-  )
+    })
+  );
 }
 
 // Fetch all the by ID
@@ -105,6 +118,7 @@ function filterWisdomById(db, query, callback) {
 
 // standard query executor
 function filterWisdom(db, selector, callback) {
+  console.log(selector);
   db.find({
     selector: selector
   }, function (err, response) {

@@ -46,9 +46,9 @@
         </div>
         <!--END: Title Section-->
         <!--BEGIN: Search Section-->
-        <div class='row' id='search'>
+        <div class='row'>
             <div class="col-sm-8 col-sm-offset-2">
-                <input type="text" name='search'>
+                <input type="text" name='search' id='search' autocomplete="off">
             </div>
         </div>
         <!--END: Search Section-->
@@ -109,7 +109,7 @@
         {{#each this}}
             <tr>
                 <td class="col-md-2 col-sm-12">
-                    <h4>
+                    <h4 class='search-index'>
                         <!-- <a href='{{doc.data.wisdom.author.social.twitter.link}}' target="_blank"> -->
                         <!--TODO: enable searching with authors name-->
                         <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">
@@ -119,7 +119,7 @@
                     </h4>
                 </td>
                 <td class="col-md-2 col-sm-12">
-                    <h4>
+                    <h4 class='search-index'>
                         <a href="wiser.html?id={{doc._id}}&rev={{doc._rev}}">
                             {{doc.data.wisdom.wisdom.title}}
                         </a>
@@ -143,10 +143,29 @@
             // RESULTS
             document.getElementById('datalist').insertAdjacentHTML('beforeend', html);
         }
+
+        // TODO - bind to database - Later with pagination enabled.
+        function search_results() {
+            var x = this;
+            // x.value = x.value.toUpperCase();
+            var search_indexes = document.getElementsByClassName('search-index')
+            for (var i=0; i<search_indexes.length; i++) {
+                if(
+                    search_indexes[i].innerText.toUpperCase().includes(x.value.toUpperCase())
+                ){
+                    search_indexes[i].parentElement.parentElement.style.display = '';
+                }
+                else {
+                    search_indexes[i].parentElement.parentElement.style.display = 'none';
+                }
+            }
+        }
+
         // print_template 
         function set_templates(results) {
             var context = results;
             set_results(context);
+            document.getElementById("search").addEventListener("keyup", search_results);
         }
     </script>
 
