@@ -1,0 +1,927 @@
+{
+  "problems": [
+    "extraneous: minimist@0.0.10 /Users/praj/Workspace/waiz/node_modules/optimist/node_modules/minimist",
+    "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec",
+    "extraneous: levelup@2.0.2 /Users/praj/Workspace/waiz/node_modules/level-packager/node_modules/levelup",
+    "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream",
+    "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist",
+    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream",
+    "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump",
+    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream",
+    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/level-iterator-stream/node_modules/readable-stream",
+    "extraneous: deferred-leveldown@4.0.2 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/deferred-leveldown",
+    "extraneous: level-errors@2.0.0 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/level-errors",
+    "extraneous: isarray@0.0.1 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/isarray",
+    "extraneous: string_decoder@0.10.31 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/string_decoder",
+    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/through2/node_modules/readable-stream"
+  ],
+  "dependencies": {
+    "@fortawesome/fontawesome-free": {
+      "version": "5.4.0",
+      "from": "@fortawesome/fontawesome-free",
+      "resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.4.0.tgz"
+    },
+    "handlebars": {
+      "version": "4.0.12",
+      "from": "handlebars",
+      "resolved": "https://registry.npmjs.org/handlebars/-/handlebars-4.0.12.tgz",
+      "problems": [
+        "extraneous: minimist@0.0.10 /Users/praj/Workspace/waiz/node_modules/optimist/node_modules/minimist"
+      ],
+      "dependencies": {
+        "async": {
+          "version": "2.6.1",
+          "from": "async@^2.5.0",
+          "resolved": "https://registry.npmjs.org/async/-/async-2.6.1.tgz",
+          "dependencies": {
+            "lodash": {
+              "version": "4.17.11",
+              "from": "lodash@^4.17.10",
+              "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz"
+            }
+          }
+        },
+        "optimist": {
+          "version": "0.6.1",
+          "from": "optimist@^0.6.1",
+          "resolved": "https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz",
+          "problems": [
+            "extraneous: minimist@0.0.10 /Users/praj/Workspace/waiz/node_modules/optimist/node_modules/minimist"
+          ],
+          "dependencies": {
+            "minimist": {
+              "version": "0.0.10",
+              "extraneous": true,
+              "problems": [
+                "extraneous: minimist@0.0.10 /Users/praj/Workspace/waiz/node_modules/optimist/node_modules/minimist"
+              ],
+              "from": "minimist@~0.0.1",
+              "resolved": "http://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz"
+            },
+            "wordwrap": {
+              "version": "0.0.3",
+              "from": "wordwrap@~0.0.2",
+              "resolved": "https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.3.tgz"
+            }
+          }
+        },
+        "source-map": {
+          "version": "0.6.1",
+          "from": "source-map@^0.6.1",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
+        },
+        "uglify-js": {
+          "version": "3.4.9",
+          "from": "uglify-js@^3.1.4",
+          "resolved": "https://registry.npmjs.org/uglify-js/-/uglify-js-3.4.9.tgz",
+          "dependencies": {
+            "commander": {
+              "version": "2.17.1",
+              "from": "commander@~2.17.1",
+              "resolved": "https://registry.npmjs.org/commander/-/commander-2.17.1.tgz"
+            },
+            "source-map": {
+              "version": "0.6.1",
+              "from": "source-map@^0.6.1",
+              "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
+            }
+          }
+        }
+      }
+    },
+    "lokijs": {
+      "version": "1.5.5",
+      "from": "lokijs",
+      "resolved": "https://registry.npmjs.org/lokijs/-/lokijs-1.5.5.tgz"
+    },
+    "pouchdb": {
+      "version": "7.0.0",
+      "from": "pouchdb",
+      "resolved": "https://registry.npmjs.org/pouchdb/-/pouchdb-7.0.0.tgz",
+      "problems": [
+        "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec",
+        "extraneous: levelup@2.0.2 /Users/praj/Workspace/waiz/node_modules/level-packager/node_modules/levelup",
+        "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream",
+        "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist",
+        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream",
+        "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump",
+        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream",
+        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/level-iterator-stream/node_modules/readable-stream",
+        "extraneous: deferred-leveldown@4.0.2 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/deferred-leveldown",
+        "extraneous: level-errors@2.0.0 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/level-errors",
+        "extraneous: isarray@0.0.1 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/isarray",
+        "extraneous: string_decoder@0.10.31 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/string_decoder",
+        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/through2/node_modules/readable-stream"
+      ],
+      "dependencies": {
+        "argsarray": {
+          "version": "0.0.1",
+          "from": "argsarray@0.0.1",
+          "resolved": "https://registry.npmjs.org/argsarray/-/argsarray-0.0.1.tgz"
+        },
+        "buffer-from": {
+          "version": "1.1.0",
+          "from": "buffer-from@1.1.0",
+          "resolved": "https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.0.tgz"
+        },
+        "clone-buffer": {
+          "version": "1.0.0",
+          "from": "clone-buffer@1.0.0",
+          "resolved": "https://registry.npmjs.org/clone-buffer/-/clone-buffer-1.0.0.tgz"
+        },
+        "double-ended-queue": {
+          "version": "2.1.0-0",
+          "from": "double-ended-queue@2.1.0-0",
+          "resolved": "https://registry.npmjs.org/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz"
+        },
+        "fetch-cookie": {
+          "version": "0.7.0",
+          "from": "fetch-cookie@0.7.0",
+          "resolved": "https://registry.npmjs.org/fetch-cookie/-/fetch-cookie-0.7.0.tgz",
+          "dependencies": {
+            "es6-denodeify": {
+              "version": "0.1.5",
+              "from": "es6-denodeify@^0.1.1",
+              "resolved": "https://registry.npmjs.org/es6-denodeify/-/es6-denodeify-0.1.5.tgz"
+            },
+            "tough-cookie": {
+              "version": "2.4.3",
+              "from": "tough-cookie@^2.3.1",
+              "resolved": "https://registry.npmjs.org/tough-cookie/-/tough-cookie-2.4.3.tgz",
+              "dependencies": {
+                "psl": {
+                  "version": "1.1.29",
+                  "from": "psl@^1.1.24",
+                  "resolved": "https://registry.npmjs.org/psl/-/psl-1.1.29.tgz"
+                },
+                "punycode": {
+                  "version": "1.4.1",
+                  "from": "punycode@^1.4.1",
+                  "resolved": "https://registry.npmjs.org/punycode/-/punycode-1.4.1.tgz"
+                }
+              }
+            }
+          }
+        },
+        "immediate": {
+          "version": "3.0.6",
+          "from": "immediate@3.0.6",
+          "resolved": "https://registry.npmjs.org/immediate/-/immediate-3.0.6.tgz"
+        },
+        "inherits": {
+          "version": "2.0.3",
+          "from": "inherits@2.0.3",
+          "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
+        },
+        "level": {
+          "version": "3.0.2",
+          "from": "level@3.0.2",
+          "resolved": "https://registry.npmjs.org/level/-/level-3.0.2.tgz",
+          "problems": [
+            "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec",
+            "extraneous: levelup@2.0.2 /Users/praj/Workspace/waiz/node_modules/level-packager/node_modules/levelup"
+          ],
+          "dependencies": {
+            "level-packager": {
+              "version": "2.1.1",
+              "from": "level-packager@^2.0.2",
+              "resolved": "https://registry.npmjs.org/level-packager/-/level-packager-2.1.1.tgz",
+              "problems": [
+                "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec",
+                "extraneous: levelup@2.0.2 /Users/praj/Workspace/waiz/node_modules/level-packager/node_modules/levelup"
+              ],
+              "dependencies": {
+                "encoding-down": {
+                  "version": "4.0.1",
+                  "from": "encoding-down@~4.0.0",
+                  "resolved": "https://registry.npmjs.org/encoding-down/-/encoding-down-4.0.1.tgz",
+                  "problems": [
+                    "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec"
+                  ],
+                  "dependencies": {
+                    "abstract-leveldown": {
+                      "version": "4.0.3",
+                      "from": "abstract-leveldown@^4.0.0",
+                      "resolved": "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-4.0.3.tgz"
+                    },
+                    "level-codec": {
+                      "version": "8.0.0",
+                      "extraneous": true,
+                      "problems": [
+                        "extraneous: level-codec@8.0.0 /Users/praj/Workspace/waiz/node_modules/encoding-down/node_modules/level-codec"
+                      ],
+                      "from": "level-codec@^8.0.0",
+                      "resolved": "https://registry.npmjs.org/level-codec/-/level-codec-8.0.0.tgz"
+                    },
+                    "level-errors": {
+                      "version": "1.1.2",
+                      "from": "level-errors@^1.0.4",
+                      "resolved": "https://registry.npmjs.org/level-errors/-/level-errors-1.1.2.tgz",
+                      "dependencies": {
+                        "errno": {
+                          "version": "0.1.7",
+                          "from": "errno@~0.1.1",
+                          "resolved": "https://registry.npmjs.org/errno/-/errno-0.1.7.tgz",
+                          "dependencies": {
+                            "prr": {
+                              "version": "1.0.1",
+                              "from": "prr@~1.0.1",
+                              "resolved": "https://registry.npmjs.org/prr/-/prr-1.0.1.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "xtend": {
+                      "version": "4.0.1",
+                      "from": "xtend@^4.0.1",
+                      "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+                    }
+                  }
+                },
+                "levelup": {
+                  "version": "2.0.2",
+                  "extraneous": true,
+                  "problems": [
+                    "extraneous: levelup@2.0.2 /Users/praj/Workspace/waiz/node_modules/level-packager/node_modules/levelup"
+                  ],
+                  "from": "levelup@^2.0.0",
+                  "resolved": "https://registry.npmjs.org/levelup/-/levelup-2.0.2.tgz"
+                }
+              }
+            },
+            "leveldown": {
+              "version": "3.0.0",
+              "from": "leveldown@3.0.0",
+              "resolved": "https://registry.npmjs.org/leveldown/-/leveldown-3.0.0.tgz"
+            },
+            "opencollective-postinstall": {
+              "version": "2.0.0",
+              "from": "opencollective-postinstall@^2.0.0",
+              "resolved": "https://registry.npmjs.org/opencollective-postinstall/-/opencollective-postinstall-2.0.0.tgz"
+            }
+          }
+        },
+        "level-codec": {
+          "version": "7.0.1",
+          "from": "level-codec@7.0.1",
+          "resolved": "https://registry.npmjs.org/level-codec/-/level-codec-7.0.1.tgz"
+        },
+        "level-write-stream": {
+          "version": "1.0.0",
+          "from": "level-write-stream@1.0.0",
+          "resolved": "https://registry.npmjs.org/level-write-stream/-/level-write-stream-1.0.0.tgz",
+          "problems": [
+            "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream"
+          ],
+          "dependencies": {
+            "end-stream": {
+              "version": "0.1.0",
+              "from": "end-stream@~0.1.0",
+              "resolved": "https://registry.npmjs.org/end-stream/-/end-stream-0.1.0.tgz",
+              "problems": [
+                "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream"
+              ],
+              "dependencies": {
+                "write-stream": {
+                  "version": "0.4.3",
+                  "from": "write-stream@~0.4.3",
+                  "resolved": "https://registry.npmjs.org/write-stream/-/write-stream-0.4.3.tgz",
+                  "problems": [
+                    "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream"
+                  ],
+                  "dependencies": {
+                    "readable-stream": {
+                      "version": "0.0.4",
+                      "extraneous": true,
+                      "problems": [
+                        "extraneous: readable-stream@0.0.4 /Users/praj/Workspace/waiz/node_modules/write-stream/node_modules/readable-stream"
+                      ],
+                      "from": "readable-stream@~0.0.2",
+                      "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-0.0.4.tgz"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "leveldown": {
+          "version": "3.0.0",
+          "from": "leveldown@3.0.0",
+          "resolved": "https://registry.npmjs.org/leveldown/-/leveldown-3.0.0.tgz",
+          "problems": [
+            "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist",
+            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream",
+            "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump",
+            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream"
+          ],
+          "dependencies": {
+            "abstract-leveldown": {
+              "version": "4.0.3",
+              "from": "abstract-leveldown@^4.0.0",
+              "resolved": "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-4.0.3.tgz",
+              "dependencies": {
+                "xtend": {
+                  "version": "4.0.1",
+                  "from": "xtend@^4.0.1",
+                  "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+                }
+              }
+            },
+            "bindings": {
+              "version": "1.3.0",
+              "from": "bindings@~1.3.0",
+              "resolved": "https://registry.npmjs.org/bindings/-/bindings-1.3.0.tgz"
+            },
+            "fast-future": {
+              "version": "1.0.2",
+              "from": "fast-future@~1.0.2",
+              "resolved": "https://registry.npmjs.org/fast-future/-/fast-future-1.0.2.tgz"
+            },
+            "nan": {
+              "version": "2.8.0",
+              "from": "nan@~2.8.0",
+              "resolved": "https://registry.npmjs.org/nan/-/nan-2.8.0.tgz"
+            },
+            "prebuild-install": {
+              "version": "2.5.3",
+              "from": "prebuild-install@^2.1.0",
+              "resolved": "https://registry.npmjs.org/prebuild-install/-/prebuild-install-2.5.3.tgz",
+              "problems": [
+                "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist",
+                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream",
+                "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump",
+                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream"
+              ],
+              "dependencies": {
+                "detect-libc": {
+                  "version": "1.0.3",
+                  "from": "detect-libc@^1.0.3",
+                  "resolved": "https://registry.npmjs.org/detect-libc/-/detect-libc-1.0.3.tgz"
+                },
+                "expand-template": {
+                  "version": "1.1.1",
+                  "from": "expand-template@^1.0.2",
+                  "resolved": "https://registry.npmjs.org/expand-template/-/expand-template-1.1.1.tgz"
+                },
+                "github-from-package": {
+                  "version": "0.0.0",
+                  "from": "github-from-package@0.0.0",
+                  "resolved": "https://registry.npmjs.org/github-from-package/-/github-from-package-0.0.0.tgz"
+                },
+                "minimist": {
+                  "version": "1.2.0",
+                  "from": "minimist@^1.2.0",
+                  "resolved": "http://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz"
+                },
+                "mkdirp": {
+                  "version": "0.5.1",
+                  "from": "mkdirp@^0.5.1",
+                  "resolved": "http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz",
+                  "problems": [
+                    "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist"
+                  ],
+                  "dependencies": {
+                    "minimist": {
+                      "version": "0.0.8",
+                      "extraneous": true,
+                      "problems": [
+                        "extraneous: minimist@0.0.8 /Users/praj/Workspace/waiz/node_modules/mkdirp/node_modules/minimist"
+                      ],
+                      "from": "minimist@0.0.8",
+                      "resolved": "http://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
+                    }
+                  }
+                },
+                "node-abi": {
+                  "version": "2.4.5",
+                  "from": "node-abi@^2.2.0",
+                  "resolved": "https://registry.npmjs.org/node-abi/-/node-abi-2.4.5.tgz",
+                  "dependencies": {
+                    "semver": {
+                      "version": "5.5.1",
+                      "from": "semver@^5.4.1",
+                      "resolved": "https://registry.npmjs.org/semver/-/semver-5.5.1.tgz"
+                    }
+                  }
+                },
+                "noop-logger": {
+                  "version": "0.1.1",
+                  "from": "noop-logger@^0.1.1",
+                  "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz"
+                },
+                "npmlog": {
+                  "version": "4.1.2",
+                  "from": "npmlog@^4.0.1",
+                  "resolved": "https://registry.npmjs.org/npmlog/-/npmlog-4.1.2.tgz",
+                  "problems": [
+                    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream"
+                  ],
+                  "dependencies": {
+                    "are-we-there-yet": {
+                      "version": "1.1.5",
+                      "from": "are-we-there-yet@~1.1.2",
+                      "resolved": "https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-1.1.5.tgz",
+                      "problems": [
+                        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream"
+                      ],
+                      "dependencies": {
+                        "readable-stream": {
+                          "version": "2.3.6",
+                          "extraneous": true,
+                          "problems": [
+                            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/are-we-there-yet/node_modules/readable-stream"
+                          ],
+                          "from": "readable-stream@^2.0.6",
+                          "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz"
+                        },
+                        "delegates": {
+                          "version": "1.0.0",
+                          "from": "delegates@^1.0.0",
+                          "resolved": "https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz"
+                        }
+                      }
+                    },
+                    "console-control-strings": {
+                      "version": "1.1.0",
+                      "from": "console-control-strings@~1.1.0",
+                      "resolved": "https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz"
+                    },
+                    "gauge": {
+                      "version": "2.7.4",
+                      "from": "gauge@~2.7.3",
+                      "resolved": "https://registry.npmjs.org/gauge/-/gauge-2.7.4.tgz",
+                      "dependencies": {
+                        "aproba": {
+                          "version": "1.2.0",
+                          "from": "aproba@^1.0.3",
+                          "resolved": "https://registry.npmjs.org/aproba/-/aproba-1.2.0.tgz"
+                        },
+                        "console-control-strings": {
+                          "version": "1.1.0",
+                          "from": "console-control-strings@~1.1.0",
+                          "resolved": "https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz"
+                        },
+                        "has-unicode": {
+                          "version": "2.0.1",
+                          "from": "has-unicode@^2.0.0",
+                          "resolved": "https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz"
+                        },
+                        "object-assign": {
+                          "version": "4.1.1",
+                          "from": "object-assign@^4.1.0",
+                          "resolved": "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
+                        },
+                        "signal-exit": {
+                          "version": "3.0.2",
+                          "from": "signal-exit@^3.0.0",
+                          "resolved": "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.2.tgz"
+                        },
+                        "string-width": {
+                          "version": "1.0.2",
+                          "from": "string-width@^1.0.1",
+                          "resolved": "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz",
+                          "dependencies": {
+                            "code-point-at": {
+                              "version": "1.1.0",
+                              "from": "code-point-at@^1.0.0",
+                              "resolved": "https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz"
+                            },
+                            "is-fullwidth-code-point": {
+                              "version": "1.0.0",
+                              "from": "is-fullwidth-code-point@^1.0.0",
+                              "resolved": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz",
+                              "dependencies": {
+                                "number-is-nan": {
+                                  "version": "1.0.1",
+                                  "from": "number-is-nan@^1.0.0",
+                                  "resolved": "https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz"
+                                }
+                              }
+                            },
+                            "strip-ansi": {
+                              "version": "3.0.1",
+                              "from": "strip-ansi@^3.0.1",
+                              "resolved": "http://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz"
+                            }
+                          }
+                        },
+                        "strip-ansi": {
+                          "version": "3.0.1",
+                          "from": "strip-ansi@^3.0.1",
+                          "resolved": "http://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz",
+                          "dependencies": {
+                            "ansi-regex": {
+                              "version": "2.1.1",
+                              "from": "ansi-regex@^2.0.0",
+                              "resolved": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz"
+                            }
+                          }
+                        },
+                        "wide-align": {
+                          "version": "1.1.3",
+                          "from": "wide-align@^1.1.0",
+                          "resolved": "https://registry.npmjs.org/wide-align/-/wide-align-1.1.3.tgz",
+                          "dependencies": {
+                            "string-width": {
+                              "version": "1.0.2",
+                              "from": "string-width@^1.0.1",
+                              "resolved": "https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "set-blocking": {
+                      "version": "2.0.0",
+                      "from": "set-blocking@~2.0.0",
+                      "resolved": "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"
+                    }
+                  }
+                },
+                "os-homedir": {
+                  "version": "1.0.2",
+                  "from": "os-homedir@^1.0.1",
+                  "resolved": "https://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz"
+                },
+                "pump": {
+                  "version": "2.0.1",
+                  "from": "pump@^2.0.1",
+                  "resolved": "https://registry.npmjs.org/pump/-/pump-2.0.1.tgz",
+                  "dependencies": {
+                    "end-of-stream": {
+                      "version": "1.4.1",
+                      "from": "end-of-stream@^1.1.0",
+                      "resolved": "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.1.tgz",
+                      "dependencies": {
+                        "once": {
+                          "version": "1.4.0",
+                          "from": "once@^1.3.1",
+                          "resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
+                        }
+                      }
+                    },
+                    "once": {
+                      "version": "1.4.0",
+                      "from": "once@^1.3.1",
+                      "resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
+                      "dependencies": {
+                        "wrappy": {
+                          "version": "1.0.2",
+                          "from": "wrappy@1",
+                          "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "rc": {
+                  "version": "1.2.8",
+                  "from": "rc@^1.1.6",
+                  "resolved": "https://registry.npmjs.org/rc/-/rc-1.2.8.tgz",
+                  "dependencies": {
+                    "deep-extend": {
+                      "version": "0.6.0",
+                      "from": "deep-extend@^0.6.0",
+                      "resolved": "https://registry.npmjs.org/deep-extend/-/deep-extend-0.6.0.tgz"
+                    },
+                    "ini": {
+                      "version": "1.3.5",
+                      "from": "ini@~1.3.0",
+                      "resolved": "https://registry.npmjs.org/ini/-/ini-1.3.5.tgz"
+                    },
+                    "minimist": {
+                      "version": "1.2.0",
+                      "from": "minimist@^1.2.0",
+                      "resolved": "http://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz"
+                    },
+                    "strip-json-comments": {
+                      "version": "2.0.1",
+                      "from": "strip-json-comments@~2.0.1",
+                      "resolved": "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz"
+                    }
+                  }
+                },
+                "simple-get": {
+                  "version": "2.8.1",
+                  "from": "simple-get@^2.7.0",
+                  "resolved": "https://registry.npmjs.org/simple-get/-/simple-get-2.8.1.tgz",
+                  "dependencies": {
+                    "decompress-response": {
+                      "version": "3.3.0",
+                      "from": "decompress-response@^3.3.0",
+                      "resolved": "https://registry.npmjs.org/decompress-response/-/decompress-response-3.3.0.tgz",
+                      "dependencies": {
+                        "mimic-response": {
+                          "version": "1.0.1",
+                          "from": "mimic-response@^1.0.0",
+                          "resolved": "https://registry.npmjs.org/mimic-response/-/mimic-response-1.0.1.tgz"
+                        }
+                      }
+                    },
+                    "once": {
+                      "version": "1.4.0",
+                      "from": "once@^1.3.1",
+                      "resolved": "https://registry.npmjs.org/once/-/once-1.4.0.tgz"
+                    },
+                    "simple-concat": {
+                      "version": "1.0.0",
+                      "from": "simple-concat@^1.0.0",
+                      "resolved": "https://registry.npmjs.org/simple-concat/-/simple-concat-1.0.0.tgz"
+                    }
+                  }
+                },
+                "tar-fs": {
+                  "version": "1.16.3",
+                  "from": "tar-fs@^1.13.0",
+                  "resolved": "https://registry.npmjs.org/tar-fs/-/tar-fs-1.16.3.tgz",
+                  "problems": [
+                    "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump",
+                    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+                    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream"
+                  ],
+                  "dependencies": {
+                    "chownr": {
+                      "version": "1.1.1",
+                      "from": "chownr@^1.0.1",
+                      "resolved": "https://registry.npmjs.org/chownr/-/chownr-1.1.1.tgz"
+                    },
+                    "mkdirp": {
+                      "version": "0.5.1",
+                      "from": "mkdirp@^0.5.1",
+                      "resolved": "http://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz"
+                    },
+                    "pump": {
+                      "version": "1.0.3",
+                      "extraneous": true,
+                      "problems": [
+                        "extraneous: pump@1.0.3 /Users/praj/Workspace/waiz/node_modules/tar-fs/node_modules/pump"
+                      ],
+                      "from": "pump@^1.0.0",
+                      "resolved": "https://registry.npmjs.org/pump/-/pump-1.0.3.tgz"
+                    },
+                    "tar-stream": {
+                      "version": "1.6.2",
+                      "from": "tar-stream@^1.1.2",
+                      "resolved": "https://registry.npmjs.org/tar-stream/-/tar-stream-1.6.2.tgz",
+                      "problems": [
+                        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream",
+                        "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream"
+                      ],
+                      "dependencies": {
+                        "bl": {
+                          "version": "1.2.2",
+                          "from": "bl@^1.0.0",
+                          "resolved": "http://registry.npmjs.org/bl/-/bl-1.2.2.tgz",
+                          "problems": [
+                            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream"
+                          ],
+                          "dependencies": {
+                            "readable-stream": {
+                              "version": "2.3.6",
+                              "extraneous": true,
+                              "problems": [
+                                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/bl/node_modules/readable-stream"
+                              ],
+                              "from": "readable-stream@^2.3.5",
+                              "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz"
+                            },
+                            "safe-buffer": {
+                              "version": "5.1.2",
+                              "from": "safe-buffer@~5.1.1",
+                              "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
+                            }
+                          }
+                        },
+                        "buffer-alloc": {
+                          "version": "1.2.0",
+                          "from": "buffer-alloc@^1.2.0",
+                          "resolved": "https://registry.npmjs.org/buffer-alloc/-/buffer-alloc-1.2.0.tgz",
+                          "dependencies": {
+                            "buffer-alloc-unsafe": {
+                              "version": "1.1.0",
+                              "from": "buffer-alloc-unsafe@^1.1.0",
+                              "resolved": "https://registry.npmjs.org/buffer-alloc-unsafe/-/buffer-alloc-unsafe-1.1.0.tgz"
+                            },
+                            "buffer-fill": {
+                              "version": "1.0.0",
+                              "from": "buffer-fill@^1.0.0",
+                              "resolved": "https://registry.npmjs.org/buffer-fill/-/buffer-fill-1.0.0.tgz"
+                            }
+                          }
+                        },
+                        "end-of-stream": {
+                          "version": "1.4.1",
+                          "from": "end-of-stream@^1.1.0",
+                          "resolved": "https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.1.tgz"
+                        },
+                        "fs-constants": {
+                          "version": "1.0.0",
+                          "from": "fs-constants@^1.0.0",
+                          "resolved": "https://registry.npmjs.org/fs-constants/-/fs-constants-1.0.0.tgz"
+                        },
+                        "readable-stream": {
+                          "version": "2.3.6",
+                          "extraneous": true,
+                          "problems": [
+                            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/tar-stream/node_modules/readable-stream"
+                          ],
+                          "from": "readable-stream@^2.3.0",
+                          "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz"
+                        },
+                        "to-buffer": {
+                          "version": "1.1.1",
+                          "from": "to-buffer@^1.1.1",
+                          "resolved": "https://registry.npmjs.org/to-buffer/-/to-buffer-1.1.1.tgz"
+                        },
+                        "xtend": {
+                          "version": "4.0.1",
+                          "from": "xtend@^4.0.1",
+                          "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+                        }
+                      }
+                    }
+                  }
+                },
+                "tunnel-agent": {
+                  "version": "0.6.0",
+                  "from": "tunnel-agent@^0.6.0",
+                  "resolved": "https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.6.0.tgz",
+                  "dependencies": {
+                    "safe-buffer": {
+                      "version": "5.1.2",
+                      "from": "safe-buffer@~5.1.1",
+                      "resolved": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz"
+                    }
+                  }
+                },
+                "which-pm-runs": {
+                  "version": "1.0.0",
+                  "from": "which-pm-runs@^1.0.0",
+                  "resolved": "https://registry.npmjs.org/which-pm-runs/-/which-pm-runs-1.0.0.tgz"
+                }
+              }
+            }
+          }
+        },
+        "levelup": {
+          "version": "3.0.1",
+          "from": "levelup@3.0.1",
+          "resolved": "https://registry.npmjs.org/levelup/-/levelup-3.0.1.tgz",
+          "problems": [
+            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/level-iterator-stream/node_modules/readable-stream",
+            "extraneous: deferred-leveldown@4.0.2 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/deferred-leveldown",
+            "extraneous: level-errors@2.0.0 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/level-errors"
+          ],
+          "dependencies": {
+            "level-iterator-stream": {
+              "version": "2.0.3",
+              "from": "level-iterator-stream@~2.0.0",
+              "resolved": "https://registry.npmjs.org/level-iterator-stream/-/level-iterator-stream-2.0.3.tgz",
+              "problems": [
+                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/level-iterator-stream/node_modules/readable-stream"
+              ],
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.3",
+                  "from": "inherits@2.0.3",
+                  "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
+                },
+                "readable-stream": {
+                  "version": "2.3.6",
+                  "extraneous": true,
+                  "problems": [
+                    "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/level-iterator-stream/node_modules/readable-stream"
+                  ],
+                  "from": "readable-stream@^2.0.5",
+                  "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz"
+                },
+                "xtend": {
+                  "version": "4.0.1",
+                  "from": "xtend@^4.0.1",
+                  "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+                }
+              }
+            },
+            "deferred-leveldown": {
+              "version": "4.0.2",
+              "extraneous": true,
+              "problems": [
+                "extraneous: deferred-leveldown@4.0.2 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/deferred-leveldown"
+              ],
+              "from": "deferred-leveldown@~4.0.0",
+              "resolved": "https://registry.npmjs.org/deferred-leveldown/-/deferred-leveldown-4.0.2.tgz"
+            },
+            "level-errors": {
+              "version": "2.0.0",
+              "extraneous": true,
+              "problems": [
+                "extraneous: level-errors@2.0.0 /Users/praj/Workspace/waiz/node_modules/levelup/node_modules/level-errors"
+              ],
+              "from": "level-errors@~2.0.0",
+              "resolved": "https://registry.npmjs.org/level-errors/-/level-errors-2.0.0.tgz"
+            },
+            "xtend": {
+              "version": "4.0.1",
+              "from": "xtend@^4.0.1",
+              "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+            }
+          }
+        },
+        "ltgt": {
+          "version": "2.2.1",
+          "from": "ltgt@2.2.1",
+          "resolved": "https://registry.npmjs.org/ltgt/-/ltgt-2.2.1.tgz"
+        },
+        "node-fetch": {
+          "version": "2.2.0",
+          "from": "node-fetch@^2.0.0",
+          "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.2.0.tgz"
+        },
+        "readable-stream": {
+          "version": "1.0.33",
+          "from": "readable-stream@1.0.33",
+          "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz",
+          "problems": [
+            "extraneous: isarray@0.0.1 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/isarray",
+            "extraneous: string_decoder@0.10.31 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/string_decoder"
+          ],
+          "dependencies": {
+            "core-util-is": {
+              "version": "1.0.2",
+              "from": "core-util-is@~1.0.0",
+              "resolved": "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.2.tgz"
+            },
+            "inherits": {
+              "version": "2.0.3",
+              "from": "inherits@2.0.3",
+              "resolved": "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
+            },
+            "isarray": {
+              "version": "0.0.1",
+              "extraneous": true,
+              "problems": [
+                "extraneous: isarray@0.0.1 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/isarray"
+              ],
+              "from": "isarray@0.0.1",
+              "resolved": "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz"
+            },
+            "string_decoder": {
+              "version": "0.10.31",
+              "extraneous": true,
+              "problems": [
+                "extraneous: string_decoder@0.10.31 /Users/praj/Workspace/waiz/node_modules/readable-stream/node_modules/string_decoder"
+              ],
+              "from": "string_decoder@~0.10.x",
+              "resolved": "https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz"
+            }
+          }
+        },
+        "spark-md5": {
+          "version": "3.0.0",
+          "from": "spark-md5@3.0.0",
+          "resolved": "https://registry.npmjs.org/spark-md5/-/spark-md5-3.0.0.tgz"
+        },
+        "through2": {
+          "version": "2.0.3",
+          "from": "through2@2.0.3",
+          "resolved": "https://registry.npmjs.org/through2/-/through2-2.0.3.tgz",
+          "problems": [
+            "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/through2/node_modules/readable-stream"
+          ],
+          "dependencies": {
+            "readable-stream": {
+              "version": "2.3.6",
+              "extraneous": true,
+              "problems": [
+                "extraneous: readable-stream@2.3.6 /Users/praj/Workspace/waiz/node_modules/through2/node_modules/readable-stream"
+              ],
+              "from": "readable-stream@^2.1.5",
+              "resolved": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.3.6.tgz"
+            },
+            "xtend": {
+              "version": "4.0.1",
+              "from": "xtend@^4.0.1",
+              "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz"
+            }
+          }
+        },
+        "uuid": {
+          "version": "3.2.1",
+          "from": "uuid@3.2.1",
+          "resolved": "https://registry.npmjs.org/uuid/-/uuid-3.2.1.tgz"
+        },
+        "vuvuzela": {
+          "version": "1.0.3",
+          "from": "vuvuzela@1.0.3",
+          "resolved": "https://registry.npmjs.org/vuvuzela/-/vuvuzela-1.0.3.tgz"
+        }
+      }
+    }
+  }
+}
