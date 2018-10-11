@@ -93,7 +93,7 @@
                         "dimensions": [
                             {
                                 "key": "time_to_read",
-                                "value": 10,
+                                "value": 1,
                                 "display": "Time to Read",
                                 "unit": "min",
                                 "primary": true,
@@ -152,7 +152,7 @@
                         "dimensions": [
                             {
                                 "key": "time_to_read",
-                                "value": 10,
+                                "value": 100,
                                 "display": "Time to Read",
                                 "unit": "min",
                                 "primary": true,
