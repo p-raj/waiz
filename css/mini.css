@@ -902,7 +902,7 @@ input:not([type="button"]):not([type="submit"]):not([type="reset"])[readonly], t
 }
 
 select {
-  max-width: 100%;
+  width: 100%;
 }
 
 option {
