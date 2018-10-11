@@ -27,7 +27,7 @@
         <!--BEGIN: Title Section-->
         <div class='row'>
             <!--BEGIN: Project Name-->
-            <div class="col-lg-2 col-md-2">
+            <div class="col-lg-2 col-md-4 col-sm-10">
                 <h4 class="hidden-sm">
                     <a href='index.html'>
                         << WAIZ
@@ -39,19 +39,13 @@
                     
                 </h4>
                 <!--BEGIN: REAL DEAL - the dimension important for the user-->
-            <div>
+            <div class="col-sm-10">
                 <h4 class="hidden-md hidden-lg">
                     <a href='index.html'><<</a>
                 </h4>
-                <p>
-                    Filter:
-                    <select>
-                        <option>1 min</option>
-                        <option>10 min</option>
-                        <option>30 min</option>
-                        <option>60 min</option>
-                    </select>
-                </p>
+                <div id='dimensions'>
+                    <!--HANDLEBARS-->
+                </div>
             </div>
             <!--END: Data Dimensions or simply the filters-->
             </div>
@@ -92,6 +86,17 @@
         </p>   
     </footer>
     
+    <script id="dimensions-template" type="text/x-handlebars-template">
+        {{display}}
+        <br>
+        <select id="dimensions-select">
+            <option value="-1">*</option>
+            {{#each values}}
+                <option value="{{this}}">{{this}} {{../unit}}</option>
+            {{/each}}
+        </select>
+    </script>
+
     <script id="title-template" type="text/x-handlebars-template">
         <div class="row">
                 <!--BEGIN: Query Topic-->
@@ -193,19 +198,83 @@
             var template = Handlebars.compile(source);
             var html    = template(context);
             // RESULTS
+            document.getElementById('content').innerHTML = "";
             document.getElementById('content').insertAdjacentHTML('beforeend', html);
         }
-        // print_template 
-        function set_templates(results) {
-            var context = results[0]; // get only the first result
+
+        function set_dimensions(context) { 
+            var display = null;
+            var key = null;
+            var unit = null;
+            var values = [];
+            // TODO: Improve this mess - probably by restructring the data
+            for(var i=0; i<context.data.wisdom.wisdom.metadata.wisdom.length; i++) {
+                var dims = context.data.wisdom.wisdom.metadata.wisdom[i].dimensions;
+                for (var j=0; j<dims.length; j++) {
+                    if (dims[j].primary == true) {
+                        display = dims[j].display;
+                        key = dims[j].key;
+                        unit = dims[j].unit;
+                        if (!(values.includes(dims[j].value))) {
+                            values.push(dims[j].value);
+                        }
+                    }
+                }
+            }
+            var context = {
+                display: display,
+                values: values.sort(),
+                key: key,
+                unit: unit
+            }
+
+            var source   = document.getElementById("dimensions-template").innerHTML;
+            var template = Handlebars.compile(source);
+            var html    = template(context);
+            // TITLE
+            document.getElementById('dimensions').insertAdjacentHTML('beforeend', html);
+        }
+
+        // what happens on filter change? DB query? - no, we have the data available
+        function on_dimension_change() {
+            var x = document.getElementById("dimensions-select");
+            // x.value = x.value.toUpperCase();
+            var new_context = JSON.parse(JSON.stringify(filtered_results));
+            var chaged_context = [];
+            var filter_these = new_context.data.wisdom.wisdom.metadata.wisdom;
+            // TODO: Improve this mess - probably by restructring the data
+            if (x.value != -1) {
+                for(var i=0; i<filter_these.length; i++) {
+                    var dims = filter_these[i].dimensions;
+                    for (var j=0; j<dims.length; j++) {
+                        if ( (dims[j].primary == true) && (dims[j].value <= x.value) ) {
+                            chaged_context.push(filter_these[i]);
+                        }
+                    }
+                }
+                new_context.data.wisdom.wisdom.metadata.wisdom = chaged_context;
+            } else {
+                new_context = JSON.parse(JSON.stringify(filtered_results));
+            }
+            set_results(new_context);
+        }
+
+        // draw GUI
+        function set_templates(result_set) {
+            var context = result_set[0]; // get only the first result
+            filtered_results = context; // data to play with
             set_title(context);
             set_results(context);
+            set_dimensions(context);
+            document.getElementById("dimensions-select").addEventListener("change", on_dimension_change);
         }
+
     </script>
 
     <script type="text/javascript">
         var db = new PouchDB('wise');
         var remoteCouch = false;
+        var filtered_results;
         id = getParameterByName('id');
         rev = getParameterByName('rev');
         filterWisdomById(

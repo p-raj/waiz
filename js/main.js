@@ -1,5 +1,4 @@
 function loadJSON(callback) {
-
   var xobj = new XMLHttpRequest();
       xobj.overrideMimeType("application/json");
   xobj.open('GET', './data/data.json', true);
@@ -12,7 +11,7 @@ function loadJSON(callback) {
   xobj.send(null);  
 }
 
-// Database methods to get and probably set the wise-list
+// MODEL + CONTROLLER - Database methods to get and probably set the wise-list
 
 // reset the database
 function resetDatabase(db) {
@@ -106,7 +105,6 @@ function filterWisdomById(db, query, callback) {
 
 // standard query executor
 function filterWisdom(db, selector, callback) {
-  console.log(selector);
   db.find({
     selector: selector
   }, function (err, response) {
@@ -126,6 +124,31 @@ function getParameterByName(name, url) {
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+// VIEW - Handlebars Help Functions
+
+// Handlebars.registerHelper('getUniqueValues', function(context, block) {
+//   var ret = "";
+//   var got = [];
+  
+//   function contains(obj, a) {
+//       for (var i = 0; i < a.length; i++) {
+//           if (a[i] === obj) {
+//               return true;
+//           }
+//       }
+//   return false;
+//   }
+  
+//   for (var i = 0; i < context.length; i++) {
+//       if (!this.contains(context[i],got)) {
+//           got.addObject(context[i]);
+//           ret += block.fn(context[i]);
+//       }
+//   }
+
+// return ret;
+// });
 
 // on page load init function
 function init() {
