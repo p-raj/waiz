@@ -53,3 +53,17 @@ perspectives)
 ![waizer](https://user-images.githubusercontent.com/40564263/46735772-d4225700-ccb4-11e8-873f-e329973b9ab3.png)
 
 ### Link to the project  - Version 0.0 - https://github.com/p-raj/waiz 
+
+# Next
+
+Slider Project - Dimensions for all the data !! 
+- merge the pages to have a single page website
+- Google search digestion
+- Twitter thread digestion
+- dynamic - 
+	- query database & pagination
+- Static MVP
+	- Apple Design (Dark) 
+	- (White)
+	- (Sepia) for all the readers ! 
+- Articles & dimension - what are similar artciles and what are opposite view articles. 
